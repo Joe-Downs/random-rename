@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=image/*
+Actions=randomizeFilename
+
+[Desktop Action randomizeFilename]
+Name=Randomize Filename
+Icon=media-playlist-shuffle
+Exec=/home/joe/git/random-rename/randomRename.sh %u %d
