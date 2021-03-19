@@ -8,9 +8,9 @@ stringLength=10
 file=$1
 directory=$2
 
-extension=`python3 ~/git/random-rename/getExtension.py $file`
+extension=`python3 ~/git/random-rename/getExtension.py "$file"`
 randomString=`python3 ~/git/random-rename/randomString.py $stringLength`
 
 # Uncomment for testing purposes
 #`konsole --hold -e echo $file $directory$randomString$extension`
-`mv $file $directory$randomString$extension`
+`mv "$file" "$directory$randomString$extension"`
