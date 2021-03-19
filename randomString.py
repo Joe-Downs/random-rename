@@ -1,5 +1,10 @@
 import random 
 import string
+import sys
+
+# The first argument is always the script's name, so set the second argument as
+# the output length.
+length = int(sys.argv[1])
 
 random.seed()
 
@@ -10,5 +15,5 @@ def getRandomString(length):
         result += random.choice(letters)
     return result
 
-randomString = getRandomString(12)
+randomString = getRandomString(length)
 print(randomString)
